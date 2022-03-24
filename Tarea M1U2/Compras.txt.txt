@@ -1,0 +1,6 @@
+-Pan
+-Frutas
+-Arroz
+-Fideos
+-Carne
+-Leche
