@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    padding: 5px;
+}
+
+.d-flex {
+    margin: 10px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+
+.imglogo {
+    height: 300px;
+    width: 300px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 4px 7px rgba(0,0,0,0.58);
+}
+
+.container {
+    background: rgb(238, 235, 235);
+    font-size: 20px;
+    border-radius: 82px 82px 82px 82px;
+    -webkit-border-radius: 82px 82px 82px 82px;
+    -moz-border-radius: 82px 82px 82px 82px;
+    height: 35px;
+    box-shadow: 11px 13px 33px -8px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 11px 13px 33px -8px rgba(0,0,0,0.61);
+    -moz-box-shadow: 11px 13px 33px -8px rgba(0,0,0,0.61);
+       
+}
+
+.col {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.cajaimg {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img1, .img2 {
+    box-shadow: 11px 13px 33px -8px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 11px 13px 33px -8px rgba(0,0,0,0.61);
+    -moz-box-shadow: 11px 13px 33px -8px rgba(0,0,0,0.61);
+}
+
+h2 {
+    line-height: 200px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 20px;
+    padding: 5%;
+}
+
