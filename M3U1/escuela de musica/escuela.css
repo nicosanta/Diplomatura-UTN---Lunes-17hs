@@ -58,7 +58,6 @@ li {
     justify-content: center;
     align-items: center ;
     list-style: none;
-
 }
 
 a { 
@@ -85,6 +84,17 @@ form {
     align-items: center;
 }
 
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 22px;
+}
 .titulos {
     font-size: 40px;
     text-align: center;
@@ -108,7 +118,6 @@ form {
     background-color: antiquewhite;
     width: 900px;
     height: 620px;
-    font-size: 20px;
     display: flex;
     flex-direction: column;  
 }
@@ -126,7 +135,6 @@ form {
     background-color: antiquewhite;
     width: 900px;
     height: 620px;
-    font-size: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -144,7 +152,6 @@ form {
     background-color: antiquewhite;
     width: 900px;
     height: 620px;
-    font-size: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -162,7 +169,6 @@ form {
     background-color: antiquewhite;
     width: 900px;
     height: 620px;
-    font-size: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -174,24 +180,16 @@ form {
 
 .art {
     background-color: antiquewhite;
-    height: 300px;
-}
-
-.title {
-    font-size: 40px;
-    padding-top: 40px;
-    padding-left: 20px;
-}
-
-.text {
-    font-size: 20px;
+    height: 250px;
+    max-width: 94%;
+    margin: 3% auto;
+    padding-left: 30px;
     padding-top: 50px;
-    padding-left: 20px;
 }
 
 .carreras {
     display: flex;
-    padding: 2%;
+    padding: 0 2%;
 }
 
 #piano {
@@ -214,23 +212,44 @@ form {
     margin-right: 1%;
 }
 
-.instrumento {
-    font-size: 23px;
+/*fin seccion planes*/
+
+/*inicio seccion grupos*/
+
+.container {
+    max-width: 94%;
+    margin: 3% auto;
+} 
+
+.description {
+    background-color: antiquewhite;
+    height: 250px;
+    padding-left: 30px;
+    padding-top: 50px;
+
+}
+.gruposestables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 5%;
+    margin-bottom: 7%;
 }
 
-.claseinfo {
-    font-size: 20px;
-    margin-top: 5%;
+/*fin seccion grupos*/
+
+/*inicio seccion contactos*/
+
+.contacto {
+    max-width: 94%;
+    margin: 3% auto;           
 }
 
-
-
-
+/*fin seccion contactos*/
 
 /* Inicio Footer*/
 footer {
-    font-size: 20px;
+    font-size: 22px;
     background-color: rgb(224, 149, 116);
     height: 210px;
     /* clear: both; */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="escuela.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Slab:wght@100&family=Yrsa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="Img/partitura.jpg"
+        alt="Logo"
+        width="150"
+        height="150"
+      />
+      <h1>Conservatorio de Música</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planes.html" target="_blank">Planes de Estudio</a></li>
+        <li><a href="grupos.html" target="_blank">Grupos</a></li>
+        <li><a class="activo" href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <form role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Búsqueda"
+          aria-label="Search"
+        />
+        <button class="btn" type="submit">Búsqueda</button>
+      </form>
+    </nav>
+    <div class="">
+      <div class="">
+        <h2>Comunicate con nosotros</h2>
+      </div>
+      <div class="">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Email</label>
+        <input
+          type="email"
+          id="correo"
+          placeholder="name@example.com"
+        />
+      </div>
+      <div class="">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Número de teléfono</label>
+        <input
+          type="text"
+          id="telefono"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Escribinos tu consulta</label
+        >
+        <textarea
+          id="consulta"
+          rows="3"
+        ></textarea>
+      </div>
+    </div>
+  
+    <footer>Creado por Nicolas Santachita &copy;</footer>
+  </body>
+</html>
