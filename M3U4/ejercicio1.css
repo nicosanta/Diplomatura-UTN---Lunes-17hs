@@ -1,0 +1,24 @@
+.contenedor {
+    display: flex;
+}
+
+.cuadradouno{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.cuadradodos{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    cursor: pointer;
+}   
+
+.cuadradotres {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    cursor: pointer;
+}
