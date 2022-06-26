@@ -1,0 +1,293 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+/*fonts*/
+* {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Yrsa', serif;
+}
+
+header {
+  display: flex;
+  /* background:#C2A15A; */
+  background-color: rgb(224, 149, 116);
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+h1 {
+  color: rgb(159, 30, 30);
+  display: flex;
+  right: 43px;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  position: relative;
+  right: 8%;
+  border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+
+  box-shadow: -12px 9px 18px -10px rgba(0,0,0,0.73);
+  -webkit-box-shadow: -12px 9px 18px -10px rgba(0,0,0,0.73);
+  -moz-box-shadow: -12px 9px 18px -10px rgba(0,0,0,0.73);
+}
+
+nav {
+  background: #EBE9E5;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+nav ul li a { 
+  display: block;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  height: 25px;
+}
+
+nav ul li a:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+.activo{
+  color: rgb(159, 30, 30);
+}
+
+form {  
+  display: flex;
+  margin: 0 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.holder {
+  max-width: 1280px;
+  margin: 0 auto;  
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 22px;
+}
+.titulos {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10%; 
+}
+
+.parrafos {
+  padding: 4%;
+  margin-top: 10%; 
+}
+
+/*Inicio primer articulo*/
+.articulouno{
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info {
+  background-color: antiquewhite;
+  width: 900px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;  
+}
+/*fin primer articulo*/
+
+/*Inicio Segundo articulo*/
+.articulodos {
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.programas {
+  background-color: antiquewhite;
+  width: 900px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+}
+/*fin del articulo dos*/
+
+/*Inicio articulo tres*/
+.articulotres {
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.grupos {
+  background-color: antiquewhite;
+  width: 900px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+}
+/*fin articulo tres*/
+
+/*inicio articulo cuatro*/
+.articulocuatro {
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.conciertos {
+  background-color: antiquewhite;
+  width: 900px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+}
+/*fin articulo cuatro*/
+
+/*fin de home*/
+
+/*Inicio de seccion Planes*/ 
+
+.art {
+  background-color: antiquewhite;
+  height: 250px;
+  max-width: 94%;
+  margin: 3% auto;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.carreras {
+  display: flex;
+  padding: 0 2%;
+}
+
+#piano {
+  margin: 1%;
+  
+}
+
+#cuerdas {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#vientos {
+  margin: 1%;
+}
+
+#percusion {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 1%;
+}
+
+/*fin seccion planes*/
+
+/*inicio seccion grupos*/
+
+.container {
+  max-width: 94%;
+  margin: 3% auto;
+} 
+
+.description {
+  background-color: antiquewhite;
+  height: 250px;
+  padding-left: 30px;
+  padding-top: 50px;
+
+}
+.gruposestables {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+
+/*fin seccion grupos*/
+
+/*inicio seccion contactos*/
+
+.contacto{ /*flex item*/
+  display: flex;
+  height: 50%;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 50px;
+}
+.formulario div {
+  display: flex;
+}
+
+.formulario div label {
+  display: flex;
+  align-items: center;
+  min-width: 80px;
+}
+
+/*fin seccion contactos*/
+
+/* Inicio Footer*/
+footer {
+  font-size: 22px;
+  background-color: rgb(224, 149, 116);
+  height: 180px;
+  /* clear: both; */
+  margin-top: 50px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+
+
