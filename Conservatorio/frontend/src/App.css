@@ -18,7 +18,7 @@ header {
   background-color: rgb(224, 149, 116);
   justify-content: center;
   align-items: center;
-  height: 180px;
+  height: 150px;
 }
 
 h1 {
@@ -55,15 +55,18 @@ nav ul {
 
 nav ul li {
   flex-grow: 1;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 nav ul li a { 
-  display: block;
+  /* display:block; */
+  display: flex;
   color: black;
   text-decoration: none;
-  text-align: center;
-  height: 25px;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  height: 40px;
 }
 
 nav ul li a:hover {
@@ -82,7 +85,7 @@ form {
 }
 
 .holder {
-  max-width: 1280px;
+  max-width: 1310px;
   margin: 0 auto;  
 }
 
@@ -108,9 +111,12 @@ p {
   margin-top: 10%; 
 }
 
+.homeimg {
+  margin-top: 20px;
+}
 /*Inicio primer articulo*/
 .articulouno{
-  margin: 1%;
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -119,7 +125,7 @@ p {
 .info {
   background-color: antiquewhite;
   width: 900px;
-  height: 620px;
+  height: 520px;
   display: flex;
   flex-direction: column;  
 }
@@ -127,7 +133,7 @@ p {
 
 /*Inicio Segundo articulo*/
 .articulodos {
-  margin: 1%;
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -136,7 +142,7 @@ p {
 .programas {
   background-color: antiquewhite;
   width: 900px;
-  height: 620px;
+  height: 520px;
   display: flex;
   flex-direction: column;
 }
@@ -144,7 +150,7 @@ p {
 
 /*Inicio articulo tres*/
 .articulotres {
-  margin: 1%;
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -153,7 +159,7 @@ p {
 .grupos {
   background-color: antiquewhite;
   width: 900px;
-  height: 620px;
+  height: 520px;
   display: flex;
   flex-direction: column;
 }
@@ -161,7 +167,7 @@ p {
 
 /*inicio articulo cuatro*/
 .articulocuatro {
-  margin: 1%;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -170,7 +176,7 @@ p {
 .conciertos {
   background-color: antiquewhite;
   width: 900px;
-  height: 620px;
+  height: 520px;
   display: flex;
   flex-direction: column;
 }
@@ -182,50 +188,41 @@ p {
 
 .art {
   background-color: antiquewhite;
-  height: 250px;
-  max-width: 94%;
-  margin: 3% auto;
+  height: 200px;
+  /* max-width: 94%; */
+  /* margin: 3% auto; */
   padding-left: 30px;
   padding-top: 50px;
 }
 
 .carreras {
   display: flex;
-  padding: 0 2%;
+  margin-top: 25px;
+  /* padding: 0 2%; */
 }
 
-#piano {
-  margin: 1%;
-  
+.piano {
+  margin-right: 15px;  
 }
 
-#cuerdas {
-  margin-top: 1%;
-  margin-bottom: 1%;
+.cuerdas {
+  margin-right: 15px;
 }
 
-#vientos {
-  margin: 1%;
+.vientos {
+  margin-right: 15px;
 }
 
-#percusion {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-right: 1%;
+.text {
+  margin-top: 25px;
 }
-
 /*fin seccion planes*/
 
 /*inicio seccion grupos*/
 
-.container {
-  max-width: 94%;
-  margin: 3% auto;
-} 
-
 .description {
   background-color: antiquewhite;
-  height: 250px;
+  height: 200px;
   padding-left: 30px;
   padding-top: 50px;
 
@@ -233,29 +230,49 @@ p {
 .gruposestables {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-bottom: 7%;
 }
 
+.jazz-container{
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+}
+
+.coro-container {
+  display: flex;
+  flex-direction: column;
+}
+.orquesta-container {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.jazz-img{
+  margin-bottom: 15px;
+}
+
+.coro-img{
+  margin-bottom: 15px;
+}
+
+.orquesta-img{
+  margin-bottom: 10px;
+}
 /*fin seccion grupos*/
 
 /*inicio seccion contactos*/
 
-.contacto{ /*flex item*/
-  display: flex;
-  height: 50%;
-}
-
 .contenedor {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 50%;
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .formulario {
@@ -263,7 +280,7 @@ p {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 24px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .formulario div {
   display: flex;
@@ -274,16 +291,18 @@ p {
   align-items: center;
   min-width: 80px;
 }
-
+textarea {
+  resize: none;
+}
 /*fin seccion contactos*/
 
 /* Inicio Footer*/
 footer {
   font-size: 22px;
   background-color: rgb(224, 149, 116);
-  height: 180px;
+  height: 150px;
   /* clear: both; */
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 20px 0;
   text-align: center;
 }

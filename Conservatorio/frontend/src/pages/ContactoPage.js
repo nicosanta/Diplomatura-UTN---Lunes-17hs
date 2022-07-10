@@ -3,12 +3,12 @@ import React from "react";
 const ContactoPage = (props) => {
     return (
         <main className="holder">
-            <div>
-                <h2>Contacto</h2>
-                <form>
+            <div className="contenedor">
+                <h2>Contactate con nosotros</h2>
+                <form className="formulario">
                     <div>
                         <label for="email">Email</label>
-                        <input type="text"></input>
+                        <input type="text"placeholder="ejemplo@gmail.com"></input>
                     </div>
                     <div>
                         <label for="telefono">Teléfono</label>

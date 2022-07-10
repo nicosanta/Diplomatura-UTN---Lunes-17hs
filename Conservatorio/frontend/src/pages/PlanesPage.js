@@ -1,19 +1,78 @@
 import React from "react";
 
-const PlanesPage = (props)=> {
-    return (
-        <main className="holder">
+const PlanesPage = (props) => {
+  return (
+    <main className="holder">
+      <div className="art">
+        <h2>Todas nestras carreras</h2>
+        <p>lorem</p>
+      </div>
+      <div className="contiene">
+        <div className="carreras">
+          <div className="piano">
             <div>
-                <h2>Planes de estudio</h2>
-                <p>lorem</p>
+              <img
+                src="img/pianovertical.jpg"
+                alt="piano"
+                height="540"
+                width="360"
+              />
             </div>
-            <div className="planes">
-                <div className="piano"></div>
-                <div className="cuerdas"></div>
-                <div className="vientos"></div>
-                <div className="percusion"></div>
+            <div className="text">
+              <h3>Piano</h3>
+              <hr></hr>
+              <p>Estas son las clases de piano</p>
             </div>
-        </main>
-    );
-}
-export default PlanesPage; 
+          </div>
+
+          <div className="cuerdas">
+            <div>
+              <img
+                src="img/contrabajovertical.jpg"
+                alt="cuerdas"
+                height="540"
+                width="360"
+              />
+            </div>
+            <div className="text">
+              <h3>Cuerdas</h3>
+              <hr></hr>
+              <p>Todo tipo de cuerdas</p>
+            </div>
+          </div>
+          <div className="vientos">
+            <div>
+              <img
+                src="img/vientos.jpg"
+                alt="vientos"
+                height="540"
+                width="360"
+              />
+            </div>
+            <div className="text">
+              <h3>Vientos</h3>
+              <hr></hr>
+              <p>Intrumentos de Viento</p>
+            </div>
+          </div>
+          <div className="percusion">
+            <div>
+              <img
+                src="img/percusion2.jpg"
+                alt="percusion"
+                height="540"
+                width="360"
+              />
+            </div>
+            <div className="text">
+              <h3>Percusión</h3>
+              <hr></hr>
+              <p>Timbales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
+export default PlanesPage;
