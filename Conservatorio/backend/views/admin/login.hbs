@@ -1,0 +1,9 @@
+<h2>Login</h2>
+<form action="/admin/login" method="post">
+    <input type="text" name="name"></input>
+    <input type="password" name="password">
+    <button type="submit">enviar</button>
+</form>
+{{#if error}}
+    <p>Usuario o contraseña incorrecta</p>
+{{/if}}
