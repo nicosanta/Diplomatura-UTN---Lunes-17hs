@@ -1,9 +1,21 @@
-<h2>Login</h2>
-<form action="/admin/login" method="post">
-    <input type="text" name="usuario"></input>
-    <input type="password" name="password">
-    <button type="submit">enviar</button>
-</form>
-{{#if error}}
-    <p>Usuario o contraseña incorrecta</p>
-{{/if}}
+<div class="container" style="margin-top: 150px; max-width: 450px;">
+    <div class="row">
+        <h2 class="titulo mb-3" style="font-size:24px;">Login</h2>
+        <form action="/admin/login" method="post">
+            <div class="form-floating mb-3">
+                <input type="text" name="usuario" class="form-control" id="floatingInput" placeholder="Usuario">
+                <label for="floatingInput">Usuario</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" name="password" class="form-control" id="floatingPassword"
+                    placeholder="Contraseña">
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+            <button type="submit" class="btn btn-success mb-3">Ingresar</button>
+        </form>
+    </div>
+
+    {{#if error}}
+    <p>Usuario o contraseña incorrecta</p>  
+    {{/if}}
+</div>
