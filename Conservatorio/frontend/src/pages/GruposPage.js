@@ -1,6 +1,23 @@
+import { useState, useEffect } from "react";
+import axios from 'axios';
+import NovedadItem from "../components/novedades/Novedaditem";
 import React from "react";
 
 const GruposPage = (props) => {
+  const [loading, setLoading] = useState(false);
+  const [novedades, setNovedades] = useState([]);
+
+  useEffect (() => {
+    const cargarNovedades = async () => {
+      setLoading(true);
+      const response = await axios.get ('http:localhost:3000/api/novedades');
+      setNovedades(response.data);
+      setLoading(false);
+    }
+
+    cargarNovedades();
+  }, []);
+
   return (
     <main className="holder">
       <div className="container">
@@ -57,6 +74,16 @@ const GruposPage = (props) => {
           </div>
         </div>
       </div>
+      {
+        loading ? (
+          <p>Cargando...</p>
+        ) : (
+          novedades.map(item => <NovedadItem key ={item.id}
+            title={item.titulo}
+            body={item.cuerpo}
+            imagen={item.imagen}></NovedadItem>)
+        )
+      }
     </main>
   );
 };

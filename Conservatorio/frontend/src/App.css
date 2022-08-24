@@ -1,7 +1,14 @@
 html {
   height: 100%;
 }
-
+#root{
+  height: 100%;
+  flex: 1;
+}
+.App {
+  height: 100%;
+  flex:1;
+}
 body {
   height: 100%;
 }
@@ -22,7 +29,7 @@ header {
 }
 
 h1 {
-  color: rgb(159, 30, 30);
+  color: rgb(58, 30, 30);
   display: flex;
   right: 43px;
   font-size: 50px;
@@ -43,7 +50,7 @@ h1 {
 }
 
 nav {
-  background: #EBE9E5;
+  background: #ebeaea;
 }
 
 nav ul {
@@ -187,17 +194,18 @@ p {
 /*Inicio de seccion Planes*/ 
 
 .art {
-  background-color: antiquewhite;
-  height: 200px;
+  /* background-color: antiquewhite; */
+  height: 100px;
   /* max-width: 94%; */
   /* margin: 3% auto; */
   padding-left: 30px;
-  padding-top: 50px;
+  padding-top: 35px;
 }
 
 .carreras {
   display: flex;
-  margin-top: 25px;
+  margin-top: 80px;
+  margin-bottom: 100px;
   /* padding: 0 2%; */
 }
 
@@ -230,8 +238,9 @@ p {
 .gruposestables {
   display: flex;
   flex-direction: row;
-  margin-top: 2%;
+  margin-top: 4%;
   margin-bottom: 7%;
+  height: 300px;
 }
 
 .jazz-container{
@@ -271,8 +280,9 @@ p {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 609px;
 }
 
 .formulario {
@@ -283,7 +293,8 @@ p {
   margin-top: 40px;
 }
 .formulario div {
-  display: flex;
+  /* display: flex; */
+  flex: 1;
 }
 
 .formulario div label {

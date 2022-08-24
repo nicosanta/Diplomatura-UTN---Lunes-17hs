@@ -5,7 +5,6 @@ const PlanesPage = (props) => {
     <main className="holder">
       <div className="art">
         <h2>Todas nestras carreras</h2>
-        <p>lorem</p>
       </div>
       <div className="contiene">
         <div className="carreras">
