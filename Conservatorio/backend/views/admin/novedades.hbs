@@ -1,11 +1,11 @@
-   
 <div class="container" style="margin-top:50px">
-   {{!--fila1 --}}
+    {{!--fila1 --}}
     <div class="row">
-        <p style="font-size: 32px;">Bienvenido, {{persona}}!</p>  
+        <p style="font-size: 32px;">Bienvenido, {{persona}}!</p>
     </div>
     <div>
-        <a href="/admin/login/logout" class="btn btn-danger btn-sm active" role="button" aria-pressed="true">Cerrar sesión</a>
+        <a href="/admin/login/logout" class="btn btn-danger btn-sm active" role="button" aria-pressed="true">Cerrar
+            sesión</a>
     </div>
     {{!--fila2 --}}
     <div class="row" style="margin-top: 20px;">
@@ -17,7 +17,7 @@
         </div>
     </div>
     {{!--fila3 --}}
-    <div class ="row" style="margin-top: 10px;">
+    <div class="row" style="margin-top: 10px;">
         <div class="col">
             <table class="table">
                 <thead>
@@ -25,6 +25,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Titulo</th>
                         <th scope="col">Cuerpo</th>
+                        <th scope="col">Imagen</th>
                         <th class="text-end">Editar</th>
                     </tr>
                 </thead>
@@ -34,9 +35,12 @@
                         <th scope="row">{{id}}</th>
                         <td>{{titulo}}</td>
                         <td>{{cuerpo}}</td>
+                        <td>{{{imagen}}}</td>
                         <td class="text-end">
-                            <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}"><i class="bi bi-pencil" aria-hidden="true"></i></a>
-                            <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}"><i class="bi bi-trash" aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}"><i
+                                    class="bi bi-pencil" aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}"><i class="bi bi-trash"
+                                    aria-hidden="true"></i></a>
                         </td>
                     </tr>
                     {{/each}}
