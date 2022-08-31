@@ -13,10 +13,11 @@ router.get('/', async function(req, res, next) {
 
   novedades = novedades.map(novedad => { //parametro novedad
     if(novedad.img_id) {
-      const imagen = cloudinary.image(novedades.img_id, { //cloudinary.image
+
+      const imagen = cloudinary.image(novedad.img_id, { //cloudinary.image
         width: 70,
         height: 70,
-        crop: 'fill'
+        crop: 'fill',
       }); // creamos el nuevo array de elementos
       return {
         ...novedad,
@@ -108,15 +109,17 @@ router.post('/modificar', async (req, res, next) => {
 
     let img_id = req.body.img_original;
     let borrar_img_vieja = false; 
-
+  
     if (req.body.img_delete === '1') {
       img_id = null;
       borrar_img_vieja = true;
     } else {
-      if (req.file && Object.keys(req.files).length > 0) {
+      if (req.files && Object.keys(req.files).length > 0) {
+        //si existe imagen se sube//
+        //object.keys metodo de js//
         imagen = req.files.imagen;
         img_id = (await uploader(imagen.tempFilePath)).public_id;
-        borrar_img_vieja = true; 
+        borrar_img_vieja = true;
       }
     }
     if (borrar_img_vieja && req.body.img_original) {

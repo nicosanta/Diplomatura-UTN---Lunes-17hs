@@ -8,6 +8,7 @@ async function getNovedades(user, password) {
 
 async function instertNovedad(obj) {
     try {
+        console.log('instertNovedad');
         var query = "insert into novedades set ?";
         var rows = await pool.query (query, [obj])
         return rows;
