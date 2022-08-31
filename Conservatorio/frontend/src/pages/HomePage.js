@@ -26,7 +26,7 @@ const HomePage = (props) => {
       </div>
       <div className="articulodos">
         <div className="programas">
-          <h2 className="titulos">Nuestros Programas y Carreras</h2>
+          <h2 className="titulos">Nuestros Programas  </h2>
           <p className="parrafos">
             Actualmente tenemos mas de 10 carreras disponibles. Lorem, ipsum
             dolor sit amet consectetur adipisicing elit.Sapiente natus eveniet

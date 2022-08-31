@@ -10,7 +10,7 @@ const GruposPage = (props) => {
   useEffect (() => {
     const cargarNovedades = async () => {
       setLoading(true);
-      const response = await axios.get ('http:localhost:3000/api/novedades');
+      const response = await axios.get ('http://localhost:3000/api/novedades');
       setNovedades(response.data);
       setLoading(false);
     }
@@ -76,7 +76,7 @@ const GruposPage = (props) => {
       </div>
       {
         loading ? (
-          <p>Cargando...</p>
+          <p></p>
         ) : (
           novedades.map(item => <NovedadItem key ={item.id}
             title={item.titulo}

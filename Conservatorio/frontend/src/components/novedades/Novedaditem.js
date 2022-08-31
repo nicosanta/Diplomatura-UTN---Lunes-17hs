@@ -1,7 +1,7 @@
 import React from 'react'; 
 
 const NovedadItem = (props) => {
-    const {title, imagen, body} = props;
+    const {title, body, imagen} = props;
 
     return (
         <div className="novedades">
